@@ -149,3 +149,44 @@ footer {
 .footer {
   display: flex;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .home,
+  .about,
+  .contact,
+  .skills,
+  .projects {
+    padding: 20px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content,
+  .home-img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
