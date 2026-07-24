@@ -90,8 +90,7 @@ main hr {
 }
 .rightsection img:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
 .purple {
@@ -137,8 +136,8 @@ main hr {
 }
 
 .thirdsection ul li:hover {
-  transform: scale(1.5);
-  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 footer {
   background-color: rgb(18, 18, 62);
