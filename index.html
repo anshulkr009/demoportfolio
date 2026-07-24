@@ -93,12 +93,21 @@ main hr {
           color: rgb(255, 255, 255);}
 
         .leftsection button a:hover {
-          color: rgb(153, 153, 226);
+          color:  rgb(153, 153, 226);
         }
 
         .rightsection img {
           width: 130%;
           height: auto;
+        }
+        .rightsection img:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease-in-out;
+          }
+
+       .rightsection img:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease-in-out;
         }
       .purple {
         color: rgb(153, 89, 213);
@@ -113,17 +122,45 @@ main hr {
       .secondsection {
        max-width: 80vw;
        margin: auto;
-       height: 91vh;
+       height: 50vh;
       }
       .secondsection h1 {
         font-size: 1.9rem;
-        
       }
-      .footer {
-        background-color: rgb(28, 28, 47);
+      .thirdsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 50vh;
+        }
+        .thirdsection h1 {
+          font-size: 1.9rem;
+        }
+        .thirdsection ul {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+        }
+        .thirdsection ul li {
+          list-style: none;
+          background-color: rgb(18, 18, 62);
+          padding: 20px;
+          border-radius: 10px;
+          width: 13%;
+          text-align: center;
+        }
+        .thirdsection ul li:hover {
+          background-color: rgb(153, 153, 226);
+        }
+
+      footer{
+        background-color: rgb(18, 18, 62);
         text-align: center;
         padding: 20px;
-        margin-top: 30px;
+        color: white;
+      }
+
+      .footer {
+       display: flex;
       }
       
 
@@ -136,12 +173,11 @@ main hr {
       <div class="left"> Anshul's Portfolio</div>
       <div class="right">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Skills</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Contact</a></li>
+           <li><a href="https://www.linkedin.com/in/anshul-kumar-4376a1361?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></li>
+           <li><a href="https://www.instagram.com/ky.anshul/">Instagram</a></li>
+           <li><a href="https://x.com/anshulkr009">Twitter</a></li>
+           <li><a href="https://www.snapchat.com/add/anshulkr.09?share_id=SPca3GrNzOg&locale=en-US">Snapchat</a></li>
+           <li><a href="mailto:work.anshul.in@gmail.com">Contact Me </a></li>
 
         </ul>
       </div>
@@ -186,7 +222,22 @@ main hr {
 
       </div>
     </section>
+    <section class="thirdsection">
+      <h1>Skills</h1>
+      <span class="text-grey">Here are some of my skills:</span>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
   </main>
+  <footer>
+    <p>&copy; 2026 Anshul Kumar. All rights reserved.</p>
+  </footer>
   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
@@ -194,9 +245,7 @@ main hr {
       typeSpeed: 50,
     });
   </script>
-  <footer>
-    <p>&copy; 2023 Anshul Kumar. All rights reserved.</p>
-  </footer>
+  
 </body>
 
 </html>
